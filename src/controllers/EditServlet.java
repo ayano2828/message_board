@@ -43,9 +43,6 @@ public class EditServlet extends HttpServlet {
         request.setAttribute("message", m);
         request.setAttribute("_token", request.getSession().getId());
 
-        // メッセージ情報とセッションIDをリクエストスコープに登録
-        request.setAttribute("message", m);
-        request.setAttribute("_token", request.getSession().getId());
 
         // メッセージデータが存在しているときのみ
         // メッセージIDをセッションスコープに登録
